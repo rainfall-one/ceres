@@ -1,0 +1,42 @@
+{
+  "light": {
+    "background": {
+      "primary": "#ffffff",
+      "secondary": "#f8fafc",
+      "tertiary": "#f1f5f9"
+    },
+    "text": {
+      "primary": "#0f172a",
+      "secondary": "#475569",
+      "muted": "#94a3b8"
+    },
+    "border": {
+      "primary": "#e2e8f0",
+      "secondary": "#cbd5e1"
+    },
+    "brand": {
+      "primary": "#0ea5e9",
+      "secondary": "#14b8a6"
+    }
+  },
+  "dark": {
+    "background": {
+      "primary": "#0f172a",
+      "secondary": "#1e293b", 
+      "tertiary": "#334155"
+    },
+    "text": {
+      "primary": "#f8fafc",
+      "secondary": "#cbd5e1",
+      "muted": "#64748b"
+    },
+    "border": {
+      "primary": "#334155",
+      "secondary": "#475569"
+    },
+    "brand": {
+      "primary": "#38bdf8",
+      "secondary": "#2dd4bf"
+    }
+  }
+}
