@@ -1,0 +1,68 @@
+{
+  "name": "Logo Placement Rules",
+  "version": "1.0.0",
+  "description": "Rules and guidelines for operator logo placement",
+  "placements": {
+    "header": {
+      "primary": {
+        "position": "top-left",
+        "maxWidth": "200px",
+        "maxHeight": "60px",
+        "padding": "16px",
+        "alignment": "left"
+      },
+      "secondary": {
+        "position": "top-right", 
+        "maxWidth": "120px",
+        "maxHeight": "40px",
+        "padding": "12px",
+        "alignment": "right"
+      }
+    },
+    "footer": {
+      "primary": {
+        "position": "bottom-left",
+        "maxWidth": "150px",
+        "maxHeight": "50px",
+        "padding": "12px",
+        "alignment": "left"
+      },
+      "compliance": {
+        "position": "bottom-right",
+        "maxWidth": "100px",
+        "maxHeight": "30px",
+        "padding": "8px",
+        "alignment": "right",
+        "required": true,
+        "content": "Rainfall attribution logo"
+      }
+    },
+    "sidebar": {
+      "collapsed": {
+        "maxWidth": "32px",
+        "maxHeight": "32px",
+        "padding": "8px"
+      },
+      "expanded": {
+        "maxWidth": "160px",
+        "maxHeight": "48px",
+        "padding": "16px"
+      }
+    }
+  },
+  "requirements": {
+    "minContrast": 4.5,
+    "supportedFormats": ["svg", "png", "webp"],
+    "maxFileSize": "500KB",
+    "backgroundColor": "transparent",
+    "fallbackRequired": true
+  },
+  "compliance": {
+    "rainfallLogo": {
+      "required": true,
+      "minSize": "24px",
+      "placement": ["footer", "admin-header"],
+      "visibility": "always"
+    }
+  }
+}

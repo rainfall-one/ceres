@@ -1,0 +1,88 @@
+{
+  "name": "Operator Customizable Colors",
+  "version": "1.0.0",
+  "description": "Color tokens that operators can customize",
+  "tokens": {
+    "operator": {
+      "brand": {
+        "primary": {
+          "value": "#0066cc",
+          "type": "color",
+          "description": "Primary brand color"
+        },
+        "secondary": {
+          "value": "#004e89", 
+          "type": "color",
+          "description": "Secondary brand color"
+        },
+        "accent": {
+          "value": "#ffa400",
+          "type": "color", 
+          "description": "Accent color for highlights"
+        }
+      },
+      "text": {
+        "primary": {
+          "value": "#2c3e50",
+          "type": "color",
+          "description": "Primary text color"
+        },
+        "secondary": {
+          "value": "#7f8c8d",
+          "type": "color",
+          "description": "Secondary text color"
+        },
+        "muted": {
+          "value": "#95a5a6",
+          "type": "color",
+          "description": "Muted text color"
+        }
+      },
+      "background": {
+        "primary": {
+          "value": "#ffffff",
+          "type": "color",
+          "description": "Primary background color"
+        },
+        "surface": {
+          "value": "#f8f9fa",
+          "type": "color",
+          "description": "Surface background color"
+        }
+      },
+      "status": {
+        "success": {
+          "value": "#27ae60",
+          "type": "color",
+          "description": "Success state color"
+        },
+        "warning": {
+          "value": "#f39c12", 
+          "type": "color",
+          "description": "Warning state color"
+        },
+        "error": {
+          "value": "#e74c3c",
+          "type": "color",
+          "description": "Error state color"
+        },
+        "info": {
+          "value": "#3498db",
+          "type": "color",
+          "description": "Info state color"
+        }
+      }
+    }
+  },
+  "customizationRules": {
+    "contrastRequirements": {
+      "text": 4.5,
+      "components": 3.0
+    },
+    "brandingGuidelines": {
+      "maxColors": 12,
+      "requireFallbacks": true,
+      "accessibilityCompliance": "WCAG_AA"
+    }
+  }
+}
