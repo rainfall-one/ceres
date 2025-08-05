@@ -1,0 +1,73 @@
+{
+  "name": "Preset Color Palettes",
+  "version": "1.0.0",
+  "description": "Pre-configured color palettes for quick operator setup",
+  "palettes": {
+    "corporate-blue": {
+      "name": "Corporate Blue",
+      "primary": "#1e3a8a",
+      "secondary": "#3b82f6",
+      "accent": "#fbbf24",
+      "background": "#ffffff",
+      "surface": "#f8fafc"
+    },
+    "tech-green": {
+      "name": "Technology Green", 
+      "primary": "#065f46",
+      "secondary": "#10b981",
+      "accent": "#f59e0b",
+      "background": "#ffffff",
+      "surface": "#f0fdf4"
+    },
+    "modern-purple": {
+      "name": "Modern Purple",
+      "primary": "#6b21a8",
+      "secondary": "#a855f7",
+      "accent": "#f97316",
+      "background": "#ffffff",
+      "surface": "#faf5ff"
+    },
+    "professional-gray": {
+      "name": "Professional Gray",
+      "primary": "#374151",
+      "secondary": "#6b7280",
+      "accent": "#ef4444",
+      "background": "#ffffff",
+      "surface": "#f9fafb"
+    },
+    "energy-orange": {
+      "name": "Energy Orange",
+      "primary": "#ea580c",
+      "secondary": "#fb923c",
+      "accent": "#3b82f6",
+      "background": "#ffffff", 
+      "surface": "#fff7ed"
+    },
+    "telecom-red": {
+      "name": "Telecom Red",
+      "primary": "#dc2626",
+      "secondary": "#ef4444",
+      "accent": "#059669",
+      "background": "#ffffff",
+      "surface": "#fef2f2"
+    }
+  },
+  "usage": {
+    "primary": "Main brand color for buttons, links, highlights",
+    "secondary": "Supporting color for accents and hover states",
+    "accent": "Emphasis color for calls-to-action and alerts",
+    "background": "Main page background",
+    "surface": "Card and panel backgrounds"
+  },
+  "accessibility": {
+    "contrastRequirements": {
+      "normalText": 4.5,
+      "largeText": 3.0,
+      "uiComponents": 3.0
+    },
+    "colorBlindness": {
+      "testRequired": true,
+      "alternatives": "Must provide non-color indicators"
+    }
+  }
+}

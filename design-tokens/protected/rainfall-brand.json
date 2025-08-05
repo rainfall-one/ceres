@@ -1,0 +1,80 @@
+{
+  "name": "Protected Rainfall Brand",
+  "version": "1.0.0",
+  "description": "Protected Rainfall brand elements that cannot be modified",
+  "tokens": {
+    "rainfall": {
+      "brand": {
+        "primary": {
+          "value": "#0066cc",
+          "type": "color",
+          "description": "Rainfall primary brand color",
+          "locked": true
+        },
+        "secondary": {
+          "value": "#004080",
+          "type": "color", 
+          "description": "Rainfall secondary brand color",
+          "locked": true
+        }
+      },
+      "logo": {
+        "size": {
+          "small": {
+            "value": "24px",
+            "type": "dimension",
+            "description": "Small Rainfall logo size",
+            "locked": true
+          },
+          "medium": {
+            "value": "32px", 
+            "type": "dimension",
+            "description": "Medium Rainfall logo size",
+            "locked": true
+          },
+          "large": {
+            "value": "48px",
+            "type": "dimension",
+            "description": "Large Rainfall logo size",
+            "locked": true
+          }
+        }
+      },
+      "typography": {
+        "attribution": {
+          "fontSize": {
+            "value": "0.75rem",
+            "type": "dimension",
+            "description": "Attribution text size",
+            "locked": true
+          },
+          "fontWeight": {
+            "value": "400",
+            "type": "fontWeight", 
+            "description": "Attribution font weight",
+            "locked": true
+          },
+          "opacity": {
+            "value": "0.8",
+            "type": "opacity",
+            "description": "Attribution opacity",
+            "locked": true
+          }
+        }
+      }
+    }
+  },
+  "compliance": {
+    "requirements": {
+      "visibility": "always",
+      "modification": "prohibited",
+      "placement": "footer_or_header",
+      "minSize": "24px"
+    },
+    "text": {
+      "poweredBy": "Powered by Rainfall Cloud Platform",
+      "copyright": "© Rainfall One Ltd",
+      "website": "https://rainfall.cloud"
+    }
+  }
+}
