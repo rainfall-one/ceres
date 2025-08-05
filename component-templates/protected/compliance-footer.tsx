@@ -61,21 +61,6 @@ export const ComplianceFooter: React.FC<ComplianceFooterProps> = ({
               © {currentYear} {theme.operator.name}
             </p>
             
-            {theme.content?.companyInfo?.website && (
-              <a 
-                href={theme.content.companyInfo.website}
-                style={{
-                  color: theme.operator.colors.primary,
-                  textDecoration: 'none',
-                  fontSize: '0.875rem'
-                }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {theme.content.companyInfo.website.replace(/^https?:\/\//, '')}
-              </a>
-            )}
-            
             {/* Additional Links */}
             {additionalLinks.length > 0 && (
               <div style={{ display: 'flex', gap: '16px', marginTop: '8px' }}>

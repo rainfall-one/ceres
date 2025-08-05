@@ -1,5 +1,5 @@
 import React from 'react';
-import { useOperatorTheme } from '../hooks/useOperatorTheme';
+import { useOperatorTheme } from './theme-provider';
 
 export interface BrandedHeaderProps
 {
