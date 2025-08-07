@@ -1,0 +1,79 @@
+{
+  "name": "homepage-content",
+  "label": "Homepage Content",
+  "pluralLabel": "Homepage Content",
+  "type": "content-type",
+  "category": "Platform Content",
+  "description": "Main homepage content management for platform title, welcome message, and call-to-action elements",
+  "schema": {
+    "singleDoc": true,
+    "fields": {
+      "mainTitle": {
+        "type": "string",
+        "label": "Main Platform Title",
+        "required": true,
+        "default": "JetStream Platform",
+        "help": "The primary title displayed on the homepage"
+      },
+      "welcomeMessage": {
+        "type": "string", 
+        "label": "Welcome Message",
+        "required": true,
+        "default": "Welcome To Your Cell Management Platform",
+        "help": "Subtitle message displayed below the main title"
+      },
+      "platformDescription": {
+        "type": "area",
+        "label": "Platform Description",
+        "help": "Rich text description of the platform capabilities",
+        "widgets": {
+          "@apostrophecms/rich-text": {
+            "toolbar": ["bold", "italic", "link"]
+          }
+        }
+      },
+      "ctaButtonText": {
+        "type": "string",
+        "label": "Call-to-Action Button Text", 
+        "default": "Open Platform Dashboard",
+        "help": "Text displayed on the primary action button"
+      },
+      "ctaButtonIcon": {
+        "type": "string",
+        "label": "CTA Button Icon (emoji)",
+        "default": "🚀",
+        "help": "Emoji icon displayed before button text"
+      },
+      "heroBackgroundText": {
+        "type": "string",
+        "label": "Hero Background Text",
+        "default": "Rainfall JetStream",
+        "help": "Large background text displayed behind content"
+      }
+    },
+    "groups": {
+      "homepage": {
+        "label": "Homepage Content",
+        "fields": ["mainTitle", "welcomeMessage", "platformDescription", "ctaButtonText", "ctaButtonIcon", "heroBackgroundText"]
+      }
+    }
+  },
+  "defaultContent": {
+    "mainTitle": "JetStream Platform",
+    "welcomeMessage": "Welcome To Your Cell Management Platform", 
+    "ctaButtonText": "Open Platform Dashboard",
+    "ctaButtonIcon": "🚀",
+    "heroBackgroundText": "Rainfall JetStream"
+  },
+  "permissions": {
+    "edit": ["content-editor", "admin"],
+    "publish": ["content-editor", "admin"]
+  },
+  "workflow": {
+    "enabled": false
+  },
+  "versionControl": {
+    "enabled": true,
+    "maxVersions": 10
+  }
+}

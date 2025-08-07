@@ -1,0 +1,126 @@
+{
+  "name": "service-card",
+  "label": "Service Card",
+  "pluralLabel": "Service Cards", 
+  "type": "content-type",
+  "category": "Platform Content",
+  "description": "Service cards for platform modules with status indicators and launch capabilities",
+  "schema": {
+    "fields": {
+      "serviceName": {
+        "type": "string",
+        "label": "Service Name",
+        "required": true,
+        "help": "Display name of the service (e.g., NetMan, HexBoot, SimKick)"
+      },
+      "serviceIcon": {
+        "type": "string", 
+        "label": "Service Icon (emoji)",
+        "required": true,
+        "help": "Emoji icon representing the service (e.g., 🌐, ⬡, 🚀)"
+      },
+      "description": {
+        "type": "area",
+        "label": "Service Description",
+        "required": true,
+        "help": "Brief description of service functionality",
+        "widgets": {
+          "@apostrophecms/rich-text": {
+            "toolbar": ["bold", "italic"]
+          }
+        }
+      },
+      "launchUrl": {
+        "type": "url",
+        "label": "Launch URL",
+        "required": true,
+        "help": "URL to launch the service interface"
+      },
+      "configureUrl": {
+        "type": "url",
+        "label": "Configure URL (optional)",
+        "help": "URL for service configuration (if available)"
+      },
+      "isActive": {
+        "type": "boolean",
+        "label": "Service Active",
+        "default": true,
+        "help": "Whether the service is currently available to users"
+      },
+      "sortOrder": {
+        "type": "integer",
+        "label": "Display Order",
+        "default": 0,
+        "help": "Order in which services appear (lower numbers first)"
+      },
+      "serviceStatus": {
+        "type": "select",
+        "label": "Service Status",
+        "choices": [
+          {"label": "Operational", "value": "operational"},
+          {"label": "Maintenance", "value": "maintenance"},
+          {"label": "Limited", "value": "limited"},
+          {"label": "Offline", "value": "offline"}
+        ],
+        "default": "operational",
+        "help": "Current operational status of the service"
+      }
+    },
+    "groups": {
+      "basics": {
+        "label": "Basic Information",
+        "fields": ["serviceName", "serviceIcon", "description"]
+      },
+      "urls": {
+        "label": "URLs and Links", 
+        "fields": ["launchUrl", "configureUrl"]
+      },
+      "status": {
+        "label": "Status and Display",
+        "fields": ["isActive", "sortOrder", "serviceStatus"]
+      }
+    }
+  },
+  "defaultContent": [
+    {
+      "serviceName": "NetMan",
+      "serviceIcon": "🌐",
+      "description": "Network topology management and monitoring",
+      "launchUrl": "/dashboard",
+      "isActive": true,
+      "sortOrder": 1,
+      "serviceStatus": "operational"
+    },
+    {
+      "serviceName": "HexBoot",
+      "serviceIcon": "⬡", 
+      "description": "Bare metal provisioning and hardware management",
+      "launchUrl": "/hex-boot",
+      "isActive": true,
+      "sortOrder": 2,
+      "serviceStatus": "operational"
+    },
+    {
+      "serviceName": "SimKick",
+      "serviceIcon": "🚀",
+      "description": "Simulation and testing environments", 
+      "launchUrl": "/dashboard",
+      "isActive": true,
+      "sortOrder": 3,
+      "serviceStatus": "operational"
+    }
+  ],
+  "permissions": {
+    "edit": ["content-editor", "admin"],
+    "publish": ["content-editor", "admin"],
+    "create": ["content-editor", "admin"],
+    "delete": ["admin"]
+  },
+  "workflow": {
+    "enabled": false
+  },
+  "versionControl": {
+    "enabled": true,
+    "maxVersions": 5
+  }
+}

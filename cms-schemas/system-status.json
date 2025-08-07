@@ -1,0 +1,135 @@
+{
+  "name": "system-status",
+  "label": "System Status",
+  "pluralLabel": "System Status", 
+  "type": "content-type",
+  "category": "Platform Monitoring",
+  "description": "System status indicators and health information for platform services",
+  "schema": {
+    "fields": {
+      "serviceName": {
+        "type": "string",
+        "label": "Service Name",
+        "required": true,
+        "help": "Name of the service or system component"
+      },
+      "status": {
+        "type": "select",
+        "label": "Current Status",
+        "choices": [
+          {"label": "🟢 Operational", "value": "operational"},
+          {"label": "🟡 Degraded Performance", "value": "degraded"},
+          {"label": "🟠 Partial Outage", "value": "partial"},
+          {"label": "🔴 Major Outage", "value": "outage"},
+          {"label": "🔵 Maintenance", "value": "maintenance"}
+        ],
+        "default": "operational",
+        "required": true,
+        "help": "Current operational status of the service"
+      },
+      "statusMessage": {
+        "type": "area",
+        "label": "Status Message",
+        "help": "Additional details about current status",
+        "widgets": {
+          "@apostrophecms/rich-text": {
+            "toolbar": ["bold", "italic"]
+          }
+        }
+      },
+      "lastUpdated": {
+        "type": "date",
+        "label": "Last Updated",
+        "help": "When status was last verified/updated"
+      },
+      "responseTime": {
+        "type": "float",
+        "label": "Response Time (ms)",
+        "help": "Average response time in milliseconds"
+      },
+      "uptime": {
+        "type": "float",
+        "label": "Uptime Percentage",
+        "help": "Service uptime as percentage (0-100)"
+      },
+      "isPublic": {
+        "type": "boolean",
+        "label": "Public Status",
+        "default": true,
+        "help": "Whether status is shown on public status page"
+      },
+      "category": {
+        "type": "select",
+        "label": "Service Category",
+        "choices": [
+          {"label": "Core Platform", "value": "core"},
+          {"label": "Management Tools", "value": "management"},
+          {"label": "Monitoring", "value": "monitoring"},
+          {"label": "Storage", "value": "storage"},
+          {"label": "Network", "value": "network"},
+          {"label": "External Services", "value": "external"}
+        ],
+        "default": "core",
+        "help": "Category for grouping services on status page"
+      },
+      "incidentUrl": {
+        "type": "url",
+        "label": "Incident Details URL",
+        "help": "Link to detailed incident information (if applicable)"
+      }
+    },
+    "groups": {
+      "status": {
+        "label": "Current Status",
+        "fields": ["serviceName", "status", "statusMessage", "lastUpdated"]
+      },
+      "metrics": {
+        "label": "Performance Metrics",
+        "fields": ["responseTime", "uptime"]
+      },
+      "display": {
+        "label": "Display Settings",
+        "fields": ["isPublic", "category", "incidentUrl"]
+      }
+    }
+  },
+  "defaultContent": [
+    {
+      "serviceName": "JetStream Platform",
+      "status": "operational",
+      "statusMessage": "All systems operating normally",
+      "uptime": 99.9,
+      "isPublic": true,
+      "category": "core"
+    },
+    {
+      "serviceName": "NetMan Service",
+      "status": "operational", 
+      "statusMessage": "Network management tools available",
+      "uptime": 99.8,
+      "isPublic": true,
+      "category": "management"
+    },
+    {
+      "serviceName": "HexBoot Service",
+      "status": "operational",
+      "statusMessage": "Provisioning services active",
+      "uptime": 99.7,
+      "isPublic": true,
+      "category": "management"
+    }
+  ],
+  "permissions": {
+    "edit": ["system-operator", "admin"],
+    "publish": ["system-operator", "admin"],
+    "create": ["system-operator", "admin"],
+    "delete": ["admin"]
+  },
+  "workflow": {
+    "enabled": false
+  },
+  "versionControl": {
+    "enabled": true,
+    "maxVersions": 20
+  }
+}

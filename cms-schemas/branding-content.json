@@ -1,0 +1,140 @@
+{
+  "name": "branding-content", 
+  "label": "Branding Content",
+  "pluralLabel": "Branding Content",
+  "type": "content-type",
+  "category": "Platform Branding",
+  "description": "Platform branding elements including logos, colors, and brand messaging",
+  "schema": {
+    "fields": {
+      "platformName": {
+        "type": "string",
+        "label": "Platform Name",
+        "required": true,
+        "help": "Main platform name (e.g., JetStream)"
+      },
+      "platformSubtitle": {
+        "type": "string",
+        "label": "Platform Subtitle",
+        "help": "Descriptive subtitle or tagline"
+      },
+      "logoUrl": {
+        "type": "url",
+        "label": "Logo URL",
+        "help": "URL to platform logo image"
+      },
+      "faviconUrl": {
+        "type": "url", 
+        "label": "Favicon URL",
+        "help": "URL to favicon image"
+      },
+      "primaryColor": {
+        "type": "string",
+        "label": "Primary Brand Color",
+        "help": "Hex color code for primary brand color (e.g., #3B82F6)"
+      },
+      "secondaryColor": {
+        "type": "string",
+        "label": "Secondary Brand Color", 
+        "help": "Hex color code for secondary brand color"
+      },
+      "accentColor": {
+        "type": "string",
+        "label": "Accent Color",
+        "help": "Hex color code for accent/highlight color"
+      },
+      "brandMessage": {
+        "type": "area",
+        "label": "Brand Message",
+        "help": "Core brand messaging and value proposition",
+        "widgets": {
+          "@apostrophecms/rich-text": {
+            "toolbar": ["bold", "italic"]
+          }
+        }
+      },
+      "footerText": {
+        "type": "string",
+        "label": "Footer Text",
+        "help": "Text displayed in platform footer"
+      },
+      "copyrightText": {
+        "type": "string",
+        "label": "Copyright Text",
+        "help": "Copyright notice text"
+      },
+      "contactUrl": {
+        "type": "url",
+        "label": "Contact URL",
+        "help": "URL for contact/support information"
+      },
+      "documentationUrl": {
+        "type": "url",
+        "label": "Documentation URL",
+        "help": "URL to platform documentation"
+      },
+      "supportUrl": {
+        "type": "url",
+        "label": "Support URL", 
+        "help": "URL to support/help resources"
+      },
+      "customCss": {
+        "type": "area",
+        "label": "Custom CSS",
+        "help": "Additional CSS for brand customization (advanced)",
+        "widgets": {
+          "@apostrophecms/html": {}
+        }
+      }
+    },
+    "groups": {
+      "identity": {
+        "label": "Brand Identity",
+        "fields": ["platformName", "platformSubtitle", "logoUrl", "faviconUrl"]
+      },
+      "colors": {
+        "label": "Brand Colors",
+        "fields": ["primaryColor", "secondaryColor", "accentColor"]
+      },
+      "messaging": {
+        "label": "Brand Messaging",
+        "fields": ["brandMessage", "footerText", "copyrightText"]
+      },
+      "links": {
+        "label": "Brand Links",
+        "fields": ["contactUrl", "documentationUrl", "supportUrl"]
+      },
+      "advanced": {
+        "label": "Advanced Customization",
+        "fields": ["customCss"]
+      }
+    }
+  },
+  "defaultContent": [
+    {
+      "platformName": "JetStream",
+      "platformSubtitle": "Advanced Infrastructure Management Platform",
+      "logoUrl": "/hexboot-watermark.svg",
+      "primaryColor": "#3B82F6",
+      "secondaryColor": "#1E40AF", 
+      "accentColor": "#06B6D4",
+      "brandMessage": "Empowering infrastructure teams with intelligent automation and comprehensive management tools.",
+      "footerText": "JetStream Platform - Infrastructure Management Made Simple",
+      "copyrightText": "© 2024 Rainfall Systems. All rights reserved."
+    }
+  ],
+  "permissions": {
+    "edit": ["brand-manager", "admin"],
+    "publish": ["brand-manager", "admin"],
+    "create": ["brand-manager", "admin"],
+    "delete": ["admin"]
+  },
+  "workflow": {
+    "enabled": true,
+    "stages": ["draft", "review", "approved"]
+  },
+  "versionControl": {
+    "enabled": true,
+    "maxVersions": 5
+  }
+}

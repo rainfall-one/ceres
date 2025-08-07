@@ -1,0 +1,109 @@
+{
+  "name": "platform-announcement",
+  "label": "Platform Announcement",
+  "pluralLabel": "Platform Announcements",
+  "type": "content-type", 
+  "category": "System Communication",
+  "description": "Platform-wide announcements for maintenance, updates, and important notices",
+  "schema": {
+    "fields": {
+      "title": {
+        "type": "string",
+        "label": "Announcement Title",
+        "required": true,
+        "help": "Brief title for the announcement"
+      },
+      "message": {
+        "type": "area",
+        "label": "Announcement Message",
+        "required": true,
+        "help": "Full announcement content",
+        "widgets": {
+          "@apostrophecms/rich-text": {
+            "toolbar": ["bold", "italic", "link"]
+          }
+        }
+      },
+      "priority": {
+        "type": "select",
+        "label": "Priority Level",
+        "choices": [
+          {"label": "High - Critical", "value": "high"},
+          {"label": "Medium - Important", "value": "medium"}, 
+          {"label": "Low - Informational", "value": "low"}
+        ],
+        "default": "medium",
+        "required": true,
+        "help": "Priority determines display prominence and styling"
+      },
+      "isActive": {
+        "type": "boolean",
+        "label": "Active",
+        "default": true,
+        "help": "Whether announcement is currently displayed to users"
+      },
+      "startDate": {
+        "type": "date",
+        "label": "Start Date",
+        "help": "When announcement becomes visible (optional)"
+      },
+      "endDate": {
+        "type": "date", 
+        "label": "End Date",
+        "help": "When announcement is automatically hidden (optional)"
+      },
+      "actionUrl": {
+        "type": "url",
+        "label": "Action URL (optional)",
+        "help": "Link for users to get more details or take action"
+      },
+      "actionLabel": {
+        "type": "string",
+        "label": "Action Button Text",
+        "help": "Text for action button (if actionUrl provided)"
+      },
+      "dismissible": {
+        "type": "boolean",
+        "label": "User Dismissible",
+        "default": true,
+        "help": "Whether users can dismiss this announcement"
+      }
+    },
+    "groups": {
+      "content": {
+        "label": "Announcement Content",
+        "fields": ["title", "message", "priority"]
+      },
+      "visibility": {
+        "label": "Visibility Settings",
+        "fields": ["isActive", "startDate", "endDate", "dismissible"]
+      },
+      "actions": {
+        "label": "Call to Action",
+        "fields": ["actionUrl", "actionLabel"]
+      }
+    }
+  },
+  "defaultContent": [
+    {
+      "title": "Platform Maintenance Scheduled",
+      "message": "System maintenance will occur on Sunday 2AM-4AM EST. Brief service interruptions may occur.",
+      "priority": "medium",
+      "isActive": true,
+      "dismissible": true
+    }
+  ],
+  "permissions": {
+    "edit": ["content-editor", "admin"],
+    "publish": ["content-editor", "admin"],
+    "create": ["content-editor", "admin"],
+    "delete": ["admin"]
+  },
+  "workflow": {
+    "enabled": false
+  },
+  "versionControl": {
+    "enabled": true,
+    "maxVersions": 10
+  }
+}
