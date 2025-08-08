@@ -147,4 +147,4 @@ Current version: `v1.0.0`
 
 ---
 
-Ceres serves as the foundation for consistent, scalable content management across the entire Rainfall platform! 🌾
+Ceres serves as the foundation for consistent, scalable content management across the entire Rainfall platform!
