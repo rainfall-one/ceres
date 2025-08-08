@@ -1,4 +1,4 @@
-# Ceres - Rainfall Shared Content Hub 🌾
+# Ceres - Rainfall Shared Content Hub ![Ceres](https://github.com/rainfall-one/ceres/blob/main/ceres.svg "Ceres")
 
 **Ceres** is the centralized shared content repository for the Rainfall platform, containing design tokens, component templates, brand assets, and documentation standards that are synchronized across all Rainfall products.
 
