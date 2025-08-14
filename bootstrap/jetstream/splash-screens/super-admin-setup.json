@@ -1,0 +1,55 @@
+{
+  "id": "super-admin-setup",
+  "slug": "super-admin-setup",
+  "title": "Super Admin Setup",
+  "metaTitle": "JetStream Super Admin Setup - Cell Management Platform",
+  "metaDescription": "Set up your JetStream Cell management platform with secure OAuth2 authentication and configure your first super administrator account.",
+  "branding": {
+    "badge": {
+      "icon": "🏗️",
+      "text": "JetStream Cell Setup",
+      "backgroundColor": "var(--rainfall-light)",
+      "textColor": "white"
+    },
+    "logo": {
+      "src": "/rainfall-logo.svg",
+      "alt": "Rainfall JetStream Logo",
+      "width": 40,
+      "height": 40
+    }
+  },
+  "content": {
+    "headline": {
+      "primary": "Welcome To",
+      "secondary": "Your New Cell",
+      "alignment": "center"
+    },
+    "subtitle": {
+      "text": "Let's Setup Your Cell Management Platform",
+      "color": "var(--text-subtle)"
+    },
+    "infoCard": {
+      "icon": "ℹ️",
+      "title": "Super Admin Setup",
+      "description": "As the first user, you'll become the Super Admin with full access to configure authentication, manage users, and control all Cell operations using our secure OAuth2 authentication system.",
+      "backgroundColor": "var(--card-bg)",
+      "borderColor": "var(--border-color)"
+    }
+  },
+  "cta": {
+    "primary": {
+      "text": "Start Setup with OAuth2",
+      "action": "oauth-setup",
+      "style": "primary",
+      "backgroundColor": "#3b82f6",
+      "textColor": "white"
+    }
+  },
+  "settings": {
+    "isActive": true,
+    "requiresAuth": false,
+    "theme": "auto"
+  },
+  "updatedAt": "2025-08-13T17:48:57.398Z",
+  "createdBy": "system-init"
+}

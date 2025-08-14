@@ -1,0 +1,21 @@
+{
+  "collections": {
+    "splash-screens": {
+      "name": "Splash Screens",
+      "description": "Full-screen landing pages with CTA",
+      "items": 1
+    },
+    "headers": {
+      "name": "Headers & Navigation",
+      "description": "Site headers with navigation and branding",
+      "items": 1
+    },
+    "footers": {
+      "name": "Footers",
+      "description": "Site footers with links and information",
+      "items": 1
+    }
+  },
+  "lastUpdated": "2025-08-13T17:48:57.403Z",
+  "version": "1.0.0"
+}

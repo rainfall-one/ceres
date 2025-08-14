@@ -1,0 +1,150 @@
+{
+  "id": "main-header",
+  "name": "Main Application Header",
+  "slug": "main-header",
+  "branding": {
+    "logo": {
+      "src": "/rainfall-logo.svg",
+      "alt": "JetStream",
+      "href": "/",
+      "width": 32,
+      "height": 32
+    },
+    "title": {
+      "text": "JetStream",
+      "href": "/",
+      "showOnMobile": true
+    }
+  },
+  "navigation": {
+    "primary": [
+      {
+        "id": "nav-1",
+        "text": "Dashboard",
+        "href": "/dashboard",
+        "icon": "📊",
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "id": "nav-2",
+        "text": "Packages",
+        "href": "/packages",
+        "icon": "📦",
+        "order": 2,
+        "isActive": true
+      },
+      {
+        "id": "nav-3",
+        "text": "Cells",
+        "href": "/cells",
+        "icon": "🏗️",
+        "order": 3,
+        "isActive": true
+      },
+      {
+        "id": "nav-4",
+        "text": "Monitoring",
+        "href": "/monitoring",
+        "icon": "📈",
+        "order": 4,
+        "isActive": true
+      },
+      {
+        "id": "nav-5",
+        "text": "Admin",
+        "href": "/admin",
+        "icon": "⚙️",
+        "requiresAuth": true,
+        "allowedRoles": [
+          "admin",
+          "super_admin"
+        ],
+        "order": 5,
+        "isActive": true,
+        "children": [
+          {
+            "id": "nav-5-1",
+            "text": "Users",
+            "href": "/admin/users",
+            "order": 1,
+            "isActive": true
+          },
+          {
+            "id": "nav-5-2",
+            "text": "Settings",
+            "href": "/admin/settings",
+            "order": 2,
+            "isActive": true
+          },
+          {
+            "id": "nav-5-3",
+            "text": "Logs",
+            "href": "/admin/logs",
+            "order": 3,
+            "isActive": true
+          }
+        ]
+      }
+    ],
+    "secondary": [
+      {
+        "id": "sec-1",
+        "text": "Profile",
+        "href": "/profile",
+        "icon": "👤",
+        "requiresAuth": true,
+        "order": 1,
+        "isActive": true
+      },
+      {
+        "id": "sec-2",
+        "text": "Settings",
+        "href": "/settings",
+        "icon": "⚙️",
+        "requiresAuth": true,
+        "order": 2,
+        "isActive": true
+      },
+      {
+        "id": "sec-3",
+        "text": "Help",
+        "href": "/help",
+        "icon": "❓",
+        "order": 3,
+        "isActive": true
+      },
+      {
+        "id": "sec-4",
+        "text": "Logout",
+        "href": "/logout",
+        "icon": "🚪",
+        "requiresAuth": true,
+        "order": 4,
+        "isActive": true
+      }
+    ],
+    "mobile": {
+      "showHamburger": true,
+      "collapseBreakpoint": "md"
+    }
+  },
+  "themeToggle": {
+    "show": true,
+    "position": "right",
+    "style": "button"
+  },
+  "search": {
+    "enabled": true,
+    "placeholder": "Search packages, cells, documentation...",
+    "position": "center",
+    "width": "md"
+  },
+  "settings": {
+    "isActive": true,
+    "sticky": true,
+    "transparent": false
+  },
+  "updatedAt": "2025-08-13T17:48:57.399Z",
+  "createdBy": "system-init"
+}
