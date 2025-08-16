@@ -22,7 +22,7 @@
         "id": "nav-1",
         "text": "Dashboard",
         "href": "/dashboard",
-        "icon": "",
+        "icon": "📊",
         "order": 1,
         "isActive": true
       },
@@ -30,7 +30,7 @@
         "id": "nav-2",
         "text": "Packages",
         "href": "/packages",
-        "icon": "",
+        "icon": "📦",
         "order": 2,
         "isActive": true
       },
@@ -38,7 +38,7 @@
         "id": "nav-3",
         "text": "Cells",
         "href": "/cells",
-        "icon": "",
+        "icon": "🏗️",
         "order": 3,
         "isActive": true
       },
@@ -46,7 +46,7 @@
         "id": "nav-4",
         "text": "Monitoring",
         "href": "/monitoring",
-        "icon": "",
+        "icon": "📈",
         "order": 4,
         "isActive": true
       },
@@ -54,7 +54,7 @@
         "id": "nav-5",
         "text": "Admin",
         "href": "/admin",
-        "icon": "",
+        "icon": "⚙️",
         "requiresAuth": true,
         "allowedRoles": [
           "admin",
@@ -92,7 +92,7 @@
         "id": "sec-1",
         "text": "Profile",
         "href": "/profile",
-        "icon": "",
+        "icon": "👤",
         "requiresAuth": true,
         "order": 1,
         "isActive": true
@@ -101,7 +101,7 @@
         "id": "sec-2",
         "text": "Settings",
         "href": "/settings",
-        "icon": "",
+        "icon": "⚙️",
         "requiresAuth": true,
         "order": 2,
         "isActive": true
@@ -110,7 +110,7 @@
         "id": "sec-3",
         "text": "Help",
         "href": "/help",
-        "icon": "",
+        "icon": "❓",
         "order": 3,
         "isActive": true
       },
@@ -118,7 +118,7 @@
         "id": "sec-4",
         "text": "Logout",
         "href": "/logout",
-        "icon": "",
+        "icon": "🚪",
         "requiresAuth": true,
         "order": 4,
         "isActive": true
@@ -145,6 +145,6 @@
     "sticky": true,
     "transparent": false
   },
-  "updatedAt": "2025-08-16T11:31:11.619Z",
+  "updatedAt": "2025-08-13T17:48:57.399Z",
   "createdBy": "system-init"
 }
