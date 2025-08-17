@@ -1,0 +1,12 @@
+{
+  "name": "jetstream-cms",
+  "version": "1.0.0",
+  "description": "Apostrophe CMS instance for Jetstream, auto-generated in devcontainer",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "apostrophe": "^4.20.0"
+  }
+}
