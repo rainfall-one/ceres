@@ -1,0 +1,15 @@
+{
+  "type": "jetstream-page",
+  "title": "Home (Dev Bootstrap)",
+  "slug": "home",
+  "published": true,
+  "main": {
+    "type": "area",
+    "items": [
+      {
+        "type": "@apostrophecms/rich-text",
+        "value": [{ "type": "paragraph", "content": ["Welcome to JetStream dev container."] }]
+      }
+    ]
+  }
+}
