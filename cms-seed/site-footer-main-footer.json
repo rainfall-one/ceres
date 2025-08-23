@@ -1,0 +1,176 @@
+{
+  "pieceType": "site-footer",
+  "data": {
+    "name": "Main Application Footer",
+    "slug": "main-footer",
+    "isActive": true,
+    "sections": [
+      {
+        "id": "product-section",
+        "title": "Product",
+        "type": "links",
+        "order": 1,
+        "columnWidth": 1,
+        "content": [
+          {
+            "text": "Features",
+            "href": "/features",
+            "order": 1
+          },
+          {
+            "text": "Pricing",
+            "href": "/pricing",
+            "order": 2
+          },
+          {
+            "text": "Documentation",
+            "href": "/docs",
+            "order": 3
+          },
+          {
+            "text": "API Reference",
+            "href": "/api-docs",
+            "target": "_blank",
+            "order": 4
+          },
+          {
+            "text": "Changelog",
+            "href": "/changelog",
+            "order": 5
+          }
+        ]
+      },
+      {
+        "id": "company-section",
+        "title": "Company",
+        "type": "links",
+        "order": 2,
+        "columnWidth": 1,
+        "content": [
+          {
+            "text": "About Rainfall",
+            "href": "/about",
+            "order": 1
+          },
+          {
+            "text": "Blog",
+            "href": "/blog",
+            "order": 2
+          },
+          {
+            "text": "Careers",
+            "href": "/careers",
+            "order": 3
+          },
+          {
+            "text": "Contact Us",
+            "href": "/contact",
+            "order": 4
+          },
+          {
+            "text": "Press Kit",
+            "href": "/press",
+            "order": 5
+          }
+        ]
+      },
+      {
+        "id": "support-section",
+        "title": "Support",
+        "type": "links",
+        "order": 3,
+        "columnWidth": 1,
+        "content": [
+          {
+            "text": "Help Center",
+            "href": "/help",
+            "order": 1
+          },
+          {
+            "text": "Community Forum",
+            "href": "/community",
+            "order": 2
+          },
+          {
+            "text": "Status Page",
+            "href": "/status",
+            "target": "_blank",
+            "order": 3
+          },
+          {
+            "text": "Report Issue",
+            "href": "/report",
+            "order": 4
+          },
+          {
+            "text": "Feature Requests",
+            "href": "/features/request",
+            "order": 5
+          }
+        ]
+      },
+      {
+        "id": "connect-section",
+        "title": "Connect",
+        "type": "social",
+        "order": 4,
+        "columnWidth": 1,
+        "content": [
+          {
+            "platform": "github",
+            "href": "https://github.com/rainfall-one/jetstream",
+            "order": 1
+          },
+          {
+            "platform": "twitter",
+            "href": "https://twitter.com/rainfall_one",
+            "order": 2
+          },
+          {
+            "platform": "linkedin",
+            "href": "https://linkedin.com/company/rainfall-one",
+            "order": 3
+          },
+          {
+            "platform": "discord",
+            "href": "https://discord.gg/jetstream",
+            "order": 4
+          }
+        ]
+      }
+    ],
+    "socialLinks": [],
+    "bottomBarEnabled": true,
+    "bottomBarLinks": [
+      {
+        "text": "Privacy Policy",
+        "href": "/privacy",
+        "order": 1
+      },
+      {
+        "text": "Terms of Service",
+        "href": "/terms",
+        "order": 2
+      },
+      {
+        "text": "Cookie Policy",
+        "href": "/cookies",
+        "order": 3
+      },
+      {
+        "text": "Accessibility",
+        "href": "/accessibility",
+        "order": 4
+      }
+    ],
+    "newsletterEnabled": true,
+    "newsletterTitle": "Stay Updated with JetStream",
+    "newsletterDescription": "Get the latest updates on new features, releases, and best practices for cloud infrastructure management.",
+    "newsletterPlaceholder": "Enter your email address",
+    "newsletterButtonText": "Subscribe to Updates",
+    "showDividers": true,
+    "published": true,
+    "createdAt": "2025-08-11T17:25:35.947Z",
+    "updatedAt": "2025-08-11T17:25:35.947Z"
+  }
+}
